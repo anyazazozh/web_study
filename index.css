@@ -1,0 +1,71 @@
+body{
+    margin:0; 
+
+}
+
+.left_side{
+    width:285px;
+    height: 100vh;
+    
+
+}
+
+.right_side{
+
+    width:1155px;
+    padding: 0 40px;
+}
+
+.container{
+    display:flex;
+    padding: 60px;
+    
+}
+
+.heading{
+    height: 70px;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.heading_title{
+    background: red;
+    font-family: 'Poppins';
+    font-style: normal;
+
+
+}
+
+.heading_header{
+
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 150%;
+    
+}
+
+.heading_subtitle{
+    
+    padding: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #7C8DB5;
+   
+}
+
+heading_account{
+    background: green;
+    height: 100%;
+
+}
+
+.cards{
+
+}
+
+.charts{
+
+}
+
