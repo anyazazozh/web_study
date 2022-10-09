@@ -145,6 +145,36 @@ heading_account{
 }
 
 .charts{
+    box-sizing: border-box;
+
+    /* Auto layout */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 24px;
+    width: 772px;
+    height: 344px;
+    background: #FFFFFF;
+    border: 1px solid #E6EDFF;
+    border-radius: 12px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    background: orange;
 
 }
 
+.line_chart{
+    width: 732px;
+    height: 250px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.line_chart_title{
+
+
+}
