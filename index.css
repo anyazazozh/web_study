@@ -69,7 +69,6 @@ heading_account{
     align-items: center;
     padding: 20px;
     gap: 38px;
-    position: absolute;
     width: 1060px;
     height: 142px;
     left: 325px;
@@ -145,10 +144,21 @@ heading_account{
 }
 
 .charts{
-    box-sizing: border-box;
-
-    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
     
+    position: absolute;
+    width: 1060px;
+    height: 344px;
+    left: 325px;
+    top: 336px;    
+
+}
+
+.line_chart{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -159,22 +169,304 @@ heading_account{
     background: #FFFFFF;
     border: 1px solid #E6EDFF;
     border-radius: 12px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    background: orange;
+}
+
+.line_chart_title_text{
+    width: 166px;
+    height: 30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #000000;
 
 }
 
-.line_chart{
+.line_chart_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 300px;
+    
     width: 732px;
-    height: 250px;
+    height: 30px;
+}
+
+.circle_chart{
+    box-sizing: border-box;
+
+    /* Auto layout */
+    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 10px;
+    
+    width: 256px;
+    height: 344px;
+    
+    /* White */
+    
+    background: #FFFFFF;
+    /* Border */
+    
+    border: 1px solid #E6EDFF;
+    border-radius: 12px;
+}
+
+
+.circle_chart_area{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+
+    width: 216px;
+    height: 304px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.circle_chart_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 88px;
+    width: 216px;
+    height: 30px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.circle_chart_title_text{
+    width: 88px;
+    height: 30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.circle_chart_table{
+    width: 216px;
+    height: 216px;
     flex: none;
     order: 1;
     flex-grow: 0;
 }
 
-.line_chart_title{
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+    position: absolute;
+    width: 87px;
+    height: 30px;
+    left: 51px;
+    top: 60px;
+
+}
+
+.logo_text{
+    width: 53px;
+    height: 30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.dot_1{
+
+    left: 56.67%;
+    right: 20%;
+    top: 56.67%;
+    bottom: 20%;
+
+    /* Indigo */
+
+    background: #347AE2;
+    /* Indigo */
+
+    border: 1.5px solid #347AE2
+}
+
+.dot_2{
+    left: 20%;
+    right: 56.67%;
+    top: 56.67%;
+    bottom: 20%;
+
+    /* Indigo */
+
+    background: #347AE2;
+    /* Indigo */
+
+    border: 1.5px solid #347AE2;
+}
+
+.dot_3{
+    
+    left: 20%;
+    right: 56.67%;
+    top: 20%;
+    bottom: 56.67%;
+
+    /* Indigo */
+
+    background: #347AE2;
+    /* Indigo */
+
+    border: 1.5px solid #347AE2;
+}
+
+.top_menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 28px;
+    position: absolute;
+    width: 193px;
+    height: 232px;
+    left: 56px;
+    top: 162px;
+    background: yellow;
+}
+
+.nav_list{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 69px;
+
+    width: 193px;
+    height: 24px;
+
+}
+
+.icon_text{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+
+    width: 111px;
+    height: 24px;
+
+}
+
+.nav_icon{
+    width: 24px;
+    height: 24px;
+}
+
+.nav_text{
+    width: 75px;
+    height: 24px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #347AE2;
+}
+
+.bottom_menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 28px;
+
+    position: absolute;
+    width: 193px;
+    height: 128px;
+    left: 56px;
+    top: 700px;
 
 
+}
+
+.bottom_icon_text{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+
+    width: 131px;
+    height: 24px;
+
+
+}
+
+.bottom_nav_text{
+    width: 95px;
+    height: 24px;
+
+    /* Headline */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+
+
+    /* Secondary */
+
+    color: #7C8DB5;
+}
+
+
+.bottom_nav_text_red{
+    width: 59px;
+    height: 24px;
+
+    /* Headline */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+
+
+    /* Red */
+
+    color: #FF3B30;
 }
