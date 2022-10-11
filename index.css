@@ -73,6 +73,13 @@ heading_account{
     height: 142px;
     left: 325px;
     top: 162px;
+    /* White */
+
+    background: #FFFFFF;
+    /* Border */
+
+    border: 1px solid #E6EDFF;
+    border-radius: 12px;
 }
 
 .card{
@@ -83,11 +90,12 @@ heading_account{
     gap: 12px;
     width: 198px;
     height: 99px;
+    background: #FF3B30;
 
     
     }
 
-.card_top_text{
+.card_top{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -96,11 +104,23 @@ heading_account{
     gap: 61px;
     width: 198px;
     height: 66px;
+    background: #7C8DB5;
 
 
 }
 
-.number{
+.card_top_text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    width: 95px;
+    height: 66px;
+    background: #34C759;
+}
+
+.card_top_text_number{
     width: 95px;
     height: 42px;
     font-style: normal;
@@ -111,6 +131,52 @@ heading_account{
     
 }
 
+.card_top_text_kpi{
+    width: 87px;
+    height: 24px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000000;
+
+}
+
+.card_top_text_kpi_2{
+    width: 116px;
+    height: 24px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000000;
+
+}
+
+.text_bottom_2{
+    width: 142px;
+    height: 21px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #7C8DB5;
+}
+
+.text_bottom{
+    width: 133px;
+    height: 21px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #7C8DB5;
+}
+
 .icon{
     width: 87px;
     height: 24px;
@@ -119,6 +185,17 @@ heading_account{
     font-size: 16px;
     line-height: 150%;
     color: #000000;
+}
+
+.divider{
+    width: 102px;
+    height: 0px;
+
+    /* Border */
+
+    border: 1px solid #E6EDFF;
+    transform: rotate(90deg);
+
 }
 
 .card_bottom_text{
@@ -132,6 +209,8 @@ heading_account{
     height: 21px;
 }
 
+
+
 .number_bottom{
     display: flex;
     flex-direction: row;
@@ -143,30 +222,41 @@ heading_account{
     height: 21px;
 }
 
+
+
 .charts{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
     gap: 32px;
-    
-    position: absolute;
+    background: greenyellow;
     width: 1060px;
     height: 344px;
     left: 325px;
-    top: 336px;    
+    top: 336px;   
 
 }
 
 .line_chart{
+    box-sizing: border-box;
+
+    /* Auto layout */
+    
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 20px;
     gap: 24px;
+    
     width: 772px;
     height: 344px;
+    
+    /* White */
+    
     background: #FFFFFF;
+    /* Border */
+    
     border: 1px solid #E6EDFF;
     border-radius: 12px;
 }
@@ -183,6 +273,120 @@ heading_account{
 
 }
 
+.legend{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    
+    width: 97px;
+    height: 18px;
+
+
+}
+
+.dot_1{
+    width: 8px;
+    height: 8px;
+    background: #347AE2;
+}
+
+.dot_2{
+    width: 8px;
+    height: 8px;
+    background: #FF9500;
+}
+
+.dot_3{
+    width: 8px;
+    height: 8px;
+    background: #34C759;
+}
+
+.legend_text{
+    width: 81px;
+    height: 18px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #000000;
+}
+
+.circle_chart_legend_text{
+    width: 35px;
+    height: 18px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #000000;
+}
+
+.filter_text{
+    width: 48px;
+    height: 18px;
+    
+    /* Caption/Regular */
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    /* identical to box height, or 18px */
+    
+    
+    /* Primary */
+    
+    color: #000000;
+
+}
+
+.filter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 8px 4px 12px;
+    gap: 4px;
+    width: 88px;
+    height: 26px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 10px rgba(124, 141, 181, 0.12);
+    border-radius: 8px;
+
+}
+
+.line_chart_icon{
+    width: 16px;
+    height: 16px;
+    
+}
+
+.line_chart_chevron{
+    
+    left: 25.63%;
+    right: 25.62%;
+    top: 38.12%;
+    bottom: 33.96%;
+}
+
+
+.line_chart_title_right_side{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+
+    width: 321px;
+    height: 26px;
+}
+
 .line_chart_title{
     display: flex;
     flex-direction: row;
@@ -190,7 +394,7 @@ heading_account{
     align-items: center;
     padding: 0px;
     gap: 300px;
-    
+    background: yellowgreen;
     width: 732px;
     height: 30px;
 }
@@ -229,13 +433,8 @@ heading_account{
 
     width: 216px;
     height: 304px;
+    background: yellowgreen;
 
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 1;
 }
 
 .circle_chart_title{
@@ -247,10 +446,7 @@ heading_account{
     gap: 88px;
     width: 216px;
     height: 30px;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
+    background: #FF9500;
 }
 
 .circle_chart_title_text{
@@ -262,9 +458,40 @@ heading_account{
     font-size: 20px;
     line-height: 150%;
     color: #000000;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+   
+}
+
+.circle_chart_legend{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    width: 201px;
+    height: 18px;
+  
+}
+
+.circle_legend{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 55px;
+    height: 18px;
+
+}
+
+.circle_legend_1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 51px;
+    height: 18px;
+    background: #347AE2;
 }
 
 .circle_chart_table{
@@ -282,7 +509,7 @@ heading_account{
     align-items: flex-start;
     padding: 0px;
     gap: 4px;
-    position: absolute;
+
     width: 87px;
     height: 30px;
     left: 51px;
@@ -305,50 +532,6 @@ heading_account{
     flex-grow: 0;
 }
 
-.dot_1{
-
-    left: 56.67%;
-    right: 20%;
-    top: 56.67%;
-    bottom: 20%;
-
-    /* Indigo */
-
-    background: #347AE2;
-    /* Indigo */
-
-    border: 1.5px solid #347AE2
-}
-
-.dot_2{
-    left: 20%;
-    right: 56.67%;
-    top: 56.67%;
-    bottom: 20%;
-
-    /* Indigo */
-
-    background: #347AE2;
-    /* Indigo */
-
-    border: 1.5px solid #347AE2;
-}
-
-.dot_3{
-    
-    left: 20%;
-    right: 56.67%;
-    top: 20%;
-    bottom: 56.67%;
-
-    /* Indigo */
-
-    background: #347AE2;
-    /* Indigo */
-
-    border: 1.5px solid #347AE2;
-}
-
 .top_menu{
     display: flex;
     flex-direction: column;
@@ -360,7 +543,7 @@ heading_account{
     height: 232px;
     left: 56px;
     top: 162px;
-    background: yellow;
+
 }
 
 .nav_list{
@@ -381,15 +564,21 @@ heading_account{
     align-items: flex-start;
     padding: 0px;
     gap: 12px;
-
-    width: 111px;
+    align-items: center;
+    width: 100%;
     height: 24px;
+    ;
+
 
 }
 
 .nav_icon{
     width: 24px;
     height: 24px;
+}
+
+.nav_drop_down{
+    margin-left: auto;
 }
 
 .nav_text{
@@ -401,6 +590,19 @@ heading_account{
     font-size: 16px;
     line-height: 150%;
     color: #347AE2;
+}
+
+.drop_down{
+    width: 24px;
+    height: 24px;
+}
+
+.drop_down_icon{
+
+    left: 25.62%;
+    right: 25.63%;
+    top: 38.12%;
+    bottom: 33.96%;
 }
 
 .bottom_menu{
