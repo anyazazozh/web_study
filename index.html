@@ -24,7 +24,7 @@
                     <div class="icon_text">
                     
                         <div class="nav_icon"><img src="/assets/case.png" alt=""></div>
-                        <div class="nav_text">Product</div>
+                        <div class="nav_text2">Product</div>
                     <!-- <div class="drop_down drop_down_icon"> -->
                         <img class="nav_drop_down" src="/assets/shape (12).png" alt="">
                     <!-- </div> -->
@@ -33,21 +33,21 @@
                 <div class="nav_list">
                     <div class="icon_text">
                         <div class="nav_icon"><img src="/assets/user.png" alt=""></div>
-                        <div class="nav_text">Orders</div>
+                        <div class="nav_text2">Orders</div>
                         <img class="nav_drop_down" src="/assets/shape (12).png" alt="">
                     </div>
                 </div>
                 <div class="nav_list">
                     <div class="icon_text">
                         <div class="nav_icon"><img src="/assets/checkout.png" alt=""></div>
-                        <div class="nav_text">Checkout</div>
+                        <div class="nav_text2">Checkout</div>
                         <img class="nav_drop_down" src="/assets/Frame 14.png" alt="">
                     </div>
                 </div>
                 <div class="nav_list">
                     <div class="icon_text">
                         <div class="nav_icon"><img src="/assets/settings.png" alt=""></div>
-                        <div class="nav_text">Setting</div>
+                        <div class="nav_text2">Setting</div>
                     </div>
                 </div>
 
@@ -81,10 +81,23 @@
         </div>
         <div class="right_side">
             <div class="heading">
-                <div class="heading_title"></div>
+                <div class="heading_title">
                     <div class="heading_header">Welcome Back, Marci!</div>
                     <div class="heading_subtitle">Here is the information about all your orders</div>
-                <div class="heading_account"></div>
+                </div>
+                <div class="heading_account">
+                    <div class="heading_icons">
+                        <div class="heading_account_icon"><img src="/assets/search.png" alt=""></div>
+                        <div class="heading_account_icon"><img src="/assets/bell.png" alt=""></div>
+                    </div>
+                    <div class="profile">
+                        <div class="avatar"><img src="/assets/avatar (1).png" alt=""></div>
+                        <div class="avatar_name">
+                            <div class="avatar_name_name">Marci Fumons</div>
+                            <div class="heading_account_icon"><img src="/assets/shape (12).png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="cards">
                 <div class="card">
@@ -174,7 +187,7 @@
                             <div class="filter">
                                 <div class="filter_text">Monthly</div>
                                 <div class="line_chart_icon">
-                                    <div class="line_chart_chevron"></div>
+                                    <div class="line_chart_chevron"><img src="/assets/shape (12).png" alt=""></div>
                                 </div>
                             </div>
                         </div>
@@ -208,8 +221,6 @@
                 </div>
             </div>
 
-            </div>
-
             <div class="order_list">
                 <div class="order_list_title">
                     <div class="order_list_title_header">Order List</div>
@@ -218,34 +229,30 @@
                         <div class="order_list_title_filter_chevron"><img src="/assets/shape (13).png" alt=""></div>
                     </div>
                 </div>
-                <div class="order_list_table">
-                    <div class="table_row">
-                        <div class="table_col_name1 table_text">No</div>
-                        <div class="table_col_name2 table_text">ID</div>
-                        <div class="table_col_name3 table_text">Date</div>
-                        <div class="table_col_name4 table_text">Customer Name</div>
-                        <div class="table_col_name5 table_text">Location</div>
-                        <div class="table_col_name6 table_text">Amount</div>
-                        <div class="table_col_name7 table_text">Status Order</div>
-                        <div class="table_col_name8 table_text">Action</div>
-                    </div>
-                    <div class="table_row">
-                        <div class="table_value1">1</div>
-                        <div class="table_value2">#12594</div>
-                        <div class="table_value3">Dec 1, 2021</div>
-                        <div class="table_value4">Frank Murio</div>
-                        <div class="table_value5">312 S Wilmette Ave</div>
-                        <div class="table_value6">$847.69</div>
-                        <div class="new_order">
-                            <div class="dot_3"></div>
-                            <div class="new_order_text">New Order</div>
-                        </div>
-                        <div class="table_value7"><img src="/assets/shape (14).png" alt=""></div>
-
-                    </div>
-                    <div class="table_row"></div>
-                    <div class="table_row"></div>
-                </div>
+                
+                <table class="order_table" width="100%">
+                    <colgroup span="8"></colgroup>
+                    <tr>
+                      <th>No</th>
+                      <th>ID <img src="/assets/shape (15).png" alt=""></th>
+                      <th>Date</th>
+                      <th>Customer Name <img src="/assets/shape (15).png" alt=""></th>
+                      <th>Location</th>
+                      <th>Amount <img src="/assets/shape (15).png" alt=""></th>
+                      <th>Status Order <img src="/assets/shape (15).png" alt=""></th>
+                      <th>Action</th>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>#12594</td>
+                      <td>Dec 1, 2021</td>
+                      <td>Frank Murlo</td>
+                      <td>312 S Wilmette Ave</td>
+                      <td>$847.69</td>
+                      <td>New Order</td>
+                      <td><img src="/assets/shape (14).png" alt=""></td>
+                    </tr>
+                  </table>
             </div>
         </div>
     </div>

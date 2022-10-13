@@ -20,6 +20,7 @@ body{
 .container{
     display:flex;
     padding: 60px;
+    font-family: 'Poppins';
     
 }
 
@@ -27,15 +28,22 @@ body{
     height: 70px;
     width: 100%;
     justify-content: space-between;
+    display: flex;
 
 }
 
 .heading_title{
-    background: red;
     font-family: 'Poppins';
     font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
 
-
+    width: 450px;
+    height: 70px;
+    
 }
 
 .heading_header{
@@ -56,9 +64,75 @@ body{
    
 }
 
-heading_account{
-    background: green;
-    height: 100%;
+.heading_account{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    
+    width: 293px;
+    height: 32px;
+
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+
+    width: 189px;
+    height: 32px;
+}
+
+.avatar_name{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    width: 145px;
+    height: 24px;
+    
+}
+
+.avatar_name_name{
+    width: 113px;
+    height: 24px;
+
+    /* Body */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+
+
+    /* Primary */
+
+    color: #000000;
+}
+
+.heading_icons{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    width: 72px;
+    height: 24px;
+}
+
+.heading_account_icon{
+    width: 24px;
+    height: 24px;
 
 }
 
@@ -72,8 +146,7 @@ heading_account{
     gap: 38px;
     width: 1060px;
     height: 142px;
-    left: 325px;
-    top: 162px;
+    margin-top: 32px;
     /* White */
 
     background: #FFFFFF;
@@ -91,9 +164,6 @@ heading_account{
     gap: 12px;
     width: 198px;
     height: 99px;
-    background: #FF3B30;
-
-    
     }
 
 .card_top{
@@ -105,9 +175,6 @@ heading_account{
     gap: 61px;
     width: 198px;
     height: 66px;
-    background: #7C8DB5;
-
-
 }
 
 .card_top_text{
@@ -118,7 +185,6 @@ heading_account{
 
     width: 95px;
     height: 66px;
-    background: #34C759;
 }
 
 .card_top_text_number{
@@ -229,13 +295,10 @@ heading_account{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 0px;
     gap: 32px;
-    background: greenyellow;
     width: 1060px;
     height: 344px;
-    left: 325px;
-    top: 336px;   
+    margin-top:32px   
 
 }
 
@@ -263,7 +326,7 @@ heading_account{
 }
 
 .line_chart_title_text{
-    width: 200px;
+
     height: 30px;
     font-family: 'Poppins';
     font-style: normal;
@@ -271,7 +334,7 @@ heading_account{
     font-size: 20px;
     line-height: 150%;
     color: #000000;
-
+    white-space: nowrap
 }
 
 .legend{
@@ -384,8 +447,8 @@ heading_account{
     padding: 0px;
     gap: 20px;
 
-    width: 321px;
-    height: 26px;
+
+
 }
 
 .line_chart_title{
@@ -394,9 +457,7 @@ heading_account{
     justify-content: space-between;
     align-items: center;
     padding: 0px;
-    gap: 300px;
-    background: yellowgreen;
-    width: 732px;
+    width: 100%;
     height: 30px;
 }
 
@@ -492,7 +553,6 @@ heading_account{
     gap: 8px;
     width: 51px;
     height: 18px;
-    background: #347AE2;
 }
 
 .circle_chart_table{
@@ -593,6 +653,17 @@ heading_account{
     color: #347AE2;
 }
 
+.nav_text2{
+    width: 75px;
+    height: 24px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #7C8DB5;
+}
+
 .drop_down{
     width: 24px;
     height: 24px;
@@ -676,19 +747,21 @@ heading_account{
 
 .order_list{
 
-    background: yellow;
-
-    
-
     flex-direction: row;
     align-items: flex-start;
     padding: 20px;
-    gap: 12px;
-    position: absolute;
-    width: 1059px;
+
+    width: 1038px;
     height: 298px;
     left: 325px;
-    top: 712px;
+    margin-top: 32px;
+    margin-left: 40px;
+
+    background: #FFFFFF;
+/* Border */
+
+    border: 1px solid #E6EDFF;
+    border-radius: 10px;
 }
 
 .order_list_title{
@@ -698,10 +771,10 @@ heading_account{
     align-items: center;
     padding: 0px;
     gap: 827px;
-
+    margin-bottom:32px;
     width: 1011px;
     height: 30px;
-    background: purple;}
+}
 
 .order_list_title_header{
     width: 300px;
@@ -1128,4 +1201,21 @@ heading_account{
     margin-left: 88px;
     margin-top: 25px;
  
+}
+
+
+.order_table td{
+    align: center;
+    padding: 18px;
+     
+}
+,
+th{
+    align:center;
+    padding: 18px;
+},
+table{
+    
+    border:10px solid #333;
+    border-collapse:collapse;
 }
