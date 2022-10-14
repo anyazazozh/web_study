@@ -6,7 +6,7 @@ body{
 .left_side{
     width:285px;
     height: 100vh;
-    
+    border-right: 1px solid #E6EDFF ;
 
 }
 
@@ -14,43 +14,45 @@ body{
 
     width:1155px;
     padding: 0 40px;
-    background: grey;
+
 }
 
 .container{
     display:flex;
     padding: 60px;
     font-family: 'Poppins';
+
     
 }
 
 .heading{
     height: 70px;
-    width: 100%;
+    width: 1060px;
     justify-content: space-between;
     display: flex;
 
 }
 
 .heading_title{
-    font-family: 'Poppins';
     font-style: normal;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
     gap: 4px;
-
-    width: 450px;
-    height: 70px;
     
 }
 
 .heading_header{
 
-    font-weight: 500;
+    font-weight: 1000;
     font-size: 28px;
     line-height: 150%;
+    /* LargeTitle */
+    font-family: 'Poppins';
+    font-style: normal;
+    color: #000000;
+
     
 }
 
@@ -69,11 +71,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
-    gap: 32px;
-    
-    width: 293px;
-    height: 32px;
+    gap: 32px;  
 
 }
 
@@ -84,20 +82,13 @@ body{
     padding: 0px;
     gap: 12px;
 
-    width: 189px;
-    height: 32px;
 }
 
 .avatar_name{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 0px;
-    gap: 8px;
-
-    width: 145px;
-    height: 24px;
-    
+    gap: 8px;  
 }
 
 .avatar_name_name{
@@ -106,16 +97,11 @@ body{
 
     /* Body */
 
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
     /* identical to box height, or 24px */
-
-
-    /* Primary */
-
     color: #000000;
 }
 
@@ -123,21 +109,11 @@ body{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 0px;
     gap: 24px;
-
-    width: 72px;
-    height: 24px;
-}
-
-.heading_account_icon{
-    width: 24px;
-    height: 24px;
-
 }
 
 .cards{
-    font-family: 'Poppins';
+
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -160,18 +136,27 @@ body{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
-    gap: 12px;
-    width: 198px;
-    height: 99px;
+    width: 100%;
+    gap: 30px;
+    border-right: 1px solid #E6EDFF;
     }
+    
+.card1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    width: 100%;
+    gap: 30px;
+    }
+
+
 
 .card_top{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 0px;
     gap: 61px;
     width: 198px;
     height: 66px;
@@ -181,10 +166,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
-
     width: 95px;
-    height: 66px;
 }
 
 .card_top_text_number{
@@ -199,33 +181,24 @@ body{
 }
 
 .card_top_text_kpi{
-    width: 87px;
-    height: 24px;
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
     color: #000000;
-
 }
 
 .card_top_text_kpi_2{
-    width: 116px;
-    height: 24px;
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
     color: #000000;
-
+    white-space: nowrap
 }
 
 .text_bottom_2{
-    width: 142px;
-    height: 21px;
-    font-family: 'Poppins';
+
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -234,9 +207,7 @@ body{
 }
 
 .text_bottom{
-    width: 133px;
-    height: 21px;
-    font-family: 'Poppins';
+
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -244,36 +215,11 @@ body{
     color: #7C8DB5;
 }
 
-.icon{
-    width: 87px;
-    height: 24px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    color: #000000;
-}
-
-.divider{
-    width: 102px;
-    height: 0px;
-
-    /* Border */
-
-    border: 1px solid #E6EDFF;
-    transform: rotate(90deg);
-
-}
-
 .card_bottom_text{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 0px;
     gap: 12px;
-    
-    width: 198px;
-    height: 21px;
 }
 
 
@@ -285,8 +231,6 @@ body{
     padding: 0px;
     gap: 8px;
 
-    width: 53px;
-    height: 21px;
 }
 
 
@@ -328,9 +272,8 @@ body{
 .line_chart_title_text{
 
     height: 30px;
-    font-family: 'Poppins';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 1000;
     font-size: 20px;
     line-height: 150%;
     color: #000000;
@@ -342,8 +285,7 @@ body{
     flex-direction: row;
     align-items: center;
     padding: 0px;
-    gap: 8px;
-    
+    gap: 8px;   
     width: 97px;
     height: 18px;
 
@@ -371,7 +313,6 @@ body{
 .legend_text{
     width: 81px;
     height: 18px;
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -382,7 +323,6 @@ body{
 .circle_chart_legend_text{
     width: 35px;
     height: 18px;
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -395,8 +335,7 @@ body{
     height: 18px;
     
     /* Caption/Regular */
-    
-    font-family: 'Poppins';
+
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -495,7 +434,6 @@ body{
 
     width: 216px;
     height: 304px;
-    background: yellowgreen;
 
 }
 
@@ -508,15 +446,14 @@ body{
     gap: 88px;
     width: 216px;
     height: 30px;
-    background: #FF9500;
+
 }
 
 .circle_chart_title_text{
     width: 88px;
     height: 30px;
-    font-family: 'Poppins';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 1000;
     font-size: 20px;
     line-height: 150%;
     color: #000000;
@@ -529,9 +466,6 @@ body{
     align-items: flex-start;
     padding: 0px;
     gap: 20px;
-    width: 201px;
-    height: 18px;
-  
 }
 
 .circle_legend{
@@ -540,8 +474,6 @@ body{
     align-items: center;
     padding: 0px;
     gap: 8px;
-    width: 55px;
-    height: 18px;
 
 }
 
@@ -551,16 +483,13 @@ body{
     align-items: center;
     padding: 0px;
     gap: 8px;
-    width: 51px;
-    height: 18px;
+
 }
 
 .circle_chart_table{
     width: 216px;
     height: 216px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+
 }
 
 
@@ -570,38 +499,18 @@ body{
     align-items: flex-start;
     padding: 0px;
     gap: 4px;
-
-    width: 87px;
-    height: 30px;
     left: 51px;
     top: 60px;
 
 }
 
-.logo_text{
-    width: 53px;
-    height: 30px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 0.01em;
-    color: #000000;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-}
 
 .top_menu{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
     gap: 28px;
     position: absolute;
-    width: 193px;
-    height: 232px;
     left: 56px;
     top: 162px;
 
@@ -611,9 +520,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 0px;
     gap: 69px;
-
     width: 193px;
     height: 24px;
 
@@ -645,7 +552,6 @@ body{
 .nav_text{
     width: 75px;
     height: 24px;
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -656,7 +562,6 @@ body{
 .nav_text2{
     width: 75px;
     height: 24px;
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -712,7 +617,6 @@ body{
 
     /* Headline */
 
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -732,7 +636,6 @@ body{
 
     /* Headline */
 
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -751,11 +654,11 @@ body{
     align-items: flex-start;
     padding: 20px;
 
-    width: 1038px;
+    width: 1022px;
     height: 298px;
-    left: 325px;
+
     margin-top: 32px;
-    margin-left: 40px;
+
 
     background: #FFFFFF;
 /* Border */
@@ -772,19 +675,14 @@ body{
     padding: 0px;
     gap: 827px;
     margin-bottom:32px;
-    width: 1011px;
-    height: 30px;
 }
 
 .order_list_title_header{
     width: 300px;
     height: 30px;
 
-    /* Title 1 */
-
-    font-family: 'Poppins';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 1000;
     font-size: 20px;
     line-height: 150%;
     color: #000000;
@@ -817,7 +715,6 @@ body{
 
     /* Caption/Regular */
 
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -863,350 +760,11 @@ body{
     border-bottom: 1px solid #E6EDFF;
 }
 
-.table_col_name2{
-    display: flex;
-    flex-direction: column;;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 4px;
-
-    margin-left: 73px;
-    margin-top: 18px;
-    width: 12px;
-    height: 16px;
-    left: 326px;
-    top: 18px;
-    background: #FF3B30;
-
-}
-
-.table_col_name3{
-    display: flex;
-    flex-direction: column;;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 4px;
-
-    margin-left: 102px;
-    margin-top: 18px;
-    width: 29px;
-    height: 18px;
-    left: 326px;
-    top: 18px;
-    background: #FF3B30;
-
-}
-
-.table_col_name4{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 4px;
-
-    margin-left: 110px;
-    margin-top: 18px;
-    width: 100px;
-    height: 18px;
-
-    top: 18px;
-    background: #FF3B30;
-
-}
-
-.table_col_name5{
-    display: flex;
-    flex-direction: column;;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 4px;
-
-    margin-left: 76px;
-    margin-top: 18px;
-    width: 100px;
-    height: 18px;
-    left: 326px;
-    top: 18px;
-    background: #FF3B30;
-
-}
-
-.table_col_name6{
-    display: flex;
-    flex-direction: column;;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 4px;
-
-    margin-left: 134px;
-    margin-top: 18px;
-    width: 49px;
-    height: 18px;
-
-    top: 18px;
-    background: #FF3B30;
-
-}
-
-.table_text{
-    width: 12px;
-    height: 18px;
-
-    /* Caption/Medium */
-
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 150%;
-    /* identical to box height, or 18px */
-
-
-    /* Primary */
-
-    color: #000000;
-}
-
-.table_col_name7{
-    display: flex;
-    flex-direction: column;;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 4px;
-
-    margin-left: 76px;
-    margin-top: 18px;
-    width: 76px;
-    height: 18px;
-    left: 326px;
-    top: 18px;
-    background: #FF3B30;
-
-}
-
-.table_col_name8{
-    display: flex;
-    flex-direction: column;;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 4px;
-
-    margin-left: 91px;
-    margin-top: 18px;
-    width: 39px;
-    height: 18px;
-    left: 326px;
-    top: 18px;
-    background: #FF3B30;
-
-}
-
-.table_col_name1{
-    display: flex;
-    flex-direction: column;;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 4px;
-
-    margin-left: 12px;
-    margin-top: 18px;
-    width: 17px;
-    height: 18px;
-    left: 326px;
-    top: 18px;
-    background: #FF3B30;
-
-}
-
-.table_value1{
-
-    width: 4px;
-    height: 18px;
-    margin-left: 12px;
-    margin-top: 18px;
-
-    /* Caption/Regular */
-
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 150%;
-    /* identical to box height, or 18px */
-
-
-    /* Primary */
-
-    color: #000000;
-    background:red;
-}
-
-.table_value2{
-
-    width: 44px;
-    height: 18px;
-    margin-left: 57px;
-    margin-top: 18px;
-
-    /* Caption/Regular */
-
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 150%;
-    /* identical to box height, or 18px */
-
-
-    /* Primary */
-
-    color: #000000;
-    background:red;
-}
-
-.table_value3{
-
-    width: 62px;
-    height: 18px;
-    margin-left: 70px;
-    margin-top: 18px;
-
-    /* Caption/Regular */
-
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 150%;
-    /* identical to box height, or 18px */
-
-
-    /* Primary */
-
-    color: #000000;
-    background:red;
-}
-
-.table_value4{
-
-    width: 69px;
-    height: 18px;
-    margin-left: 77px;
-    margin-top: 18px;
-
-    /* Caption/Regular */
-
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 150%;
-    /* identical to box height, or 18px */
-
-
-    /* Primary */
-
-    color: #000000;
-    background:red;
-}
-
-.table_value5{
-
-    width: 111px;
-    height: 18px;
-    margin-left: 94px;
-    margin-top: 18px;
-
-    /* Caption/Regular */
-
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 150%;
-    /* identical to box height, or 18px */
-
-
-    /* Primary */
-
-    color: #000000;
-    background:red;
-}
-
-.table_value6{
-
-    width: 47px;
-    height: 18px;
-    margin-left: 75px;
-    margin-top: 18px;
-
-    /* Caption/Regular */
-
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 150%;
-    /* identical to box height, or 18px */
-
-
-    /* Primary */
-
-    color: #000000;
-    background:red;
-}
-
-.new_order{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 4px 12px;
-    gap: 8px;
-
-    width: 103px;
-    height: 26px;
-    margin-left: 78px;
-    margin-top: 16px;
-
-    /* White */
-
-    background:green;
-    /* Shadow */
-
-    box-shadow: 0px 2px 10px rgba(124, 141, 181, 0.12);
-    border-radius: 8px;
-}
-
-.new_order_text{
-    width: 63px;
-    height: 18px;
-
-    /* Caption/Regular */
-
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 150%;
-    /* identical to box height, or 18px */
-
-
-    /* Primary */
-
-    color: #000000;
-}
-
-.table_value7{
-
-    margin-left: 88px;
-    margin-top: 25px;
- 
-}
-
 
 .order_table td{
     align: center;
     padding: 18px;
+    
      
 }
 ,
@@ -1215,7 +773,5 @@ th{
     padding: 18px;
 },
 table{
-    
-    border:10px solid #333;
-    border-collapse:collapse;
+    border-collapse: collapse;
 }
