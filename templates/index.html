@@ -15,44 +15,49 @@
             <div class="top_menu">
                 <div class="nav_list icon_text">
                         {% for item in left_menu %}
-                            <div class="nav_icon"><img src={{ item['icon'] }} alt=""></div>
+                            <div class="nav_icon"><img src="{{ item['icon'] }}" alt=""></div>
                             <div class="nav_text">{{ item['name'] }}</div>
-                        {% endfor %}
-                    
+                        
+                            {% if item['expand'] %}
+                                <img class="nav_drop_down" src="/static/assets/shape (12).png" alt="">
+                            {% endif %}
 
-                    
+                            {% if item['number'] %}
+                                <div class="nav_drop_down">{{ item['number'] }}</div>
+                            {% endif %}                     
+                        {% endfor %}                                     
                 </div>
-                <div class="nav_list">
+                <!-- <div class="nav_list">
                     
-                    <div class="icon_text">
+                    <div class="icon_text"> -->
                     
-                        <div class="nav_icon"><img src="/static/assets/case.png" alt=""></div>
-                        <div class="nav_text2">Product</div>
+                        <!-- <div class="nav_icon"><img src="/static/assets/case.png" alt=""></div>
+                        <div class="nav_text2">Product</div> -->
                     <!-- <div class="drop_down drop_down_icon"> -->
-                        <img class="nav_drop_down" src="/static/assets/shape (12).png" alt="">
+                        <!-- <img class="nav_drop_down" src="/static/assets/shape (12).png" alt=""> -->
                     <!-- </div> -->
-                    </div>
-                </div>
-                <div class="nav_list">
+                    <!-- </div>
+                </div> -->
+                <!-- <div class="nav_list">
                     <div class="icon_text">
                         <div class="nav_icon"><img src="/static/static/static/assets/user.png" alt=""></div>
                         <div class="nav_text2">Orders</div>
                         <img class="nav_drop_down" src="/static/assets/shape (12).png" alt="">
                     </div>
-                </div>
-                <div class="nav_list">
+                </div> -->
+                <!-- <div class="nav_list">
                     <div class="icon_text">
                         <div class="nav_icon"><img src="/static/assets/checkout.png" alt=""></div>
                         <div class="nav_text2">Checkout</div>
                         <img class="nav_drop_down" src="/static/assets/Frame 14.png" alt="">
                     </div>
-                </div>
-                <div class="nav_list">
+                </div> -->
+                <!-- <div class="nav_list">
                     <div class="icon_text">
                         <div class="nav_icon"><img src="/static/assets/settings.png" alt=""></div>
                         <div class="nav_text2">Setting</div>
                     </div>
-                </div>
+                </div> -->
 
                  
                 
@@ -60,24 +65,26 @@
             </div>
             
             <div class="bottom_menu">
+                {% for item in left_bottom_menu %}
                 <div class="nav_list">
                     <div class="bottom_icon_text">
-                        <div class="nav_icon"><img src="/static/assets/info.png" alt=""></div>
-                        <div class="bottom_nav_text">Help Centre</div>
+                        <div class="nav_icon"><img src="{{ item['icon'] }}" alt=""></div>
+                        <div class="bottom_nav_text">{{ item['name'] }}</div>
                     </div>   
                 </div>
-                <div class="nav_list">
+                {% endfor %}
+                <!-- <div class="nav_list">
                     <div class="bottom_icon_text">
                         <div class="nav_icon"><img src="/static/assets/chat.png" alt=""></div>
                         <div class="bottom_nav_text">Contact us</div>
                     </div>
-                </div>
-                <div class="nav_list">
+                </div> -->
+                <!-- <div class="nav_list">
                     <div class="bottom_icon_text">
                         <div class="nav_icon"><img src="/static/assets/shape (11).png" alt=""></div>
                         <div class="bottom_nav_text_red">Log out</div>
                     </div>
-                </div>
+                </div> -->
             </div>
 
             </div> 
@@ -94,7 +101,7 @@
                         <div class="heading_account_icon"><img src="/static/assets/bell.png" alt=""></div>
                     </div>
                     <div class="profile">
-                        <div class="avatar"><img src="/static/assets/avatar (1).png" alt=""></div>
+                        <div class="avatar"><img src="{{ avatar }}" alt=""></div>
                         <div class="avatar_name">
                             <div class="avatar_name_name">{{name}} {{surname}}</div>
                             <div class="heading_account_icon"><img src="/static/assets/shape (12).png" alt=""></div>
@@ -103,23 +110,25 @@
                 </div>
             </div>
             <div class="cards">
+                {% for item in cards %}
                 <div class="card">
                     <div class="card_top">
                         <div class="card_top_text">
-                            <div class="card_top_text_number">89,935</div>
-                            <div class="card_top_text_kpi">Total users</div>
+                            <div class="card_top_text_number">{{ item['total_number'] }}</div>
+                            <div class="card_top_text_kpi">{{ item['kpi'] }}</div>
                         </div>
-                        <div class="icon"><img src="/static/assets/icon.png" alt=""></div>
+                        <div class="icon"><img src="{{ item['icon'] }}" alt=""></div>
                     </div>
 
                     <div class="card_bottom_text">
-                        <div class="number_bottom"><img src="/static/assets/up.png" alt=""> 10.2</div>
-                        <div class="text_bottom"> +1.01% this week</div>
+                        <div class="number_bottom"><img src="{{ item['bottom_icon'] }}" alt=""> {{ item['bottom_number'] }}</div>
+                        <div class="text_bottom"> {{ item['bottom_text'] }}</div>
                     </div>
 
                 </div>
+                {% endfor %}
 
-                <div class="card">
+                <!-- <div class="card">
                     <div class="card_top">
                         <div class="card_top_text">
                             <div class="card_top_text_number">23,283.5</div>
@@ -133,9 +142,9 @@
                         <div class="text_bottom_2"> +0.49% this week</div>
                     </div>
 
-                </div>
+                </div> -->
 
-                <div class="card">
+                <!-- <div class="card">
                     <div class="card_top">
                         <div class="card_top_text">
                             <div class="card_top_text_number">46,827</div>
@@ -148,9 +157,9 @@
                         <div class="text_bottom"> -0.91% this week</div>
                     </div>
 
-                </div>
+                </div> -->
 
-                <div class="card1">
+                <!-- <div class="card1">
                     <div class="card_top">
                         <div class="card_top_text">
                             <div class="card_top_text_number">124,854</div>
@@ -163,7 +172,7 @@
                         <div class="text_bottom"> +1.51% this week</div>
                     </div>
 
-                </div>
+                </div> -->
 
             </div>
             <div class="charts">
@@ -171,15 +180,20 @@
                     <div class="line_chart_title">
                         <div class="line_chart_title_text">Orders analytics</div>
                         <div class="line_chart_title_right_side">
-                            <div class="legend">
+                            {% for item in line_chart_legend %}
+                                <div class="legend">
+                                    <div class="{{ item['dot'] }}"></div>
+                                    <div class="legend_text">{{ item['name'] }}</div>
+                                </div>
+                            {% endfor %}
+                            <!-- <div class="legend">
                                 <div class="dot_1"></div>
                                 <div class="legend_text">Offline orders</div>
-                            </div>
-                            <div class="legend">
+                            </div> -->
+                            <!-- <div class="legend">
                                 <div class="dot_2"></div>
-                                <div class="legend_text">Online orders</div>
-                                
-                            </div>
+                                <div class="legend_text">Online orders</div> 
+                            </div> -->
                             <div class="filter">
                                 <div class="filter_text">Monthly</div>
                                 <div class="line_chart_icon">
@@ -199,18 +213,24 @@
                         </div>
                         <div class="circle_chart_table"><img src="/static/assets/Circle-Chart.png" alt=""></div>
                         <div class="circle_chart_legend">
-                            <div class="circle_legend">
+                            {% for item in circle_chart_legend %}
+                                <div class="circle_legend">
+                                    <div class="{{ item['dot'] }}"></div>
+                                    <div class="circle_chart_legend_text">{{item['name']}}</div>
+                                </div>
+                            {% endfor %}
+                            <!-- <div class="circle_legend">
                                 <div class="dot_3"></div>
                                 <div class="circle_chart_legend_text">Offline</div>
-                            </div>
-                            <div class="circle_legend">
+                            </div> -->
+                            <!-- <div class="circle_legend">
                                 <div class="dot_2"></div>
                                 <div class="circle_chart_legend_text">Online</div>
-                            </div>
-                            <div class="circle_legend_1">
+                            </div> -->
+                            <!-- <div class="circle_legend_1">
                                 <div class="dot_1"></div>
                                 <div class="circle_chart_legend_text">Trade</div>
-                            </div>
+                            </div> -->
 
                         </div>
                     </div>   
