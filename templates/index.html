@@ -11,20 +11,22 @@
 <body>
     <div class="container">
         <div class="left_side"> 
-            <div class="logo"><img src="/static/assets/Logo.png" alt="">
+            <div class="logo"><img src="/static/assets/Logo.png" alt=""></div> 
             <div class="top_menu">
 
                 {% for item in left_menu %}
-                    <div class="nav_icon"><img src="{{ item['icon'] }}" alt=""></div>
-                    <div class="nav_text">{{ item['name'] }}</div>
-                
-                    {% if item['expand'] %}
-                        <img class="nav_drop_down" src="/static/assets/shape (12).png" alt="">
-                    {% endif %}
+                    <div class="icon_text">
+                        <div class="nav_icon"><img src="{{ item['icon'] }}" alt=""></div>
+                        <div class="nav_text">{{ item['name'] }}</div>
+                    
+                        {% if item['expand'] %}
+                            <img class="nav_drop_down" src="/static/assets/shape (12).png" alt="">
+                        {% endif %}
 
-                    {% if item['number'] %}
-                        <div class="nav_drop_down">{{ item['number'] }}</div>
-                    {% endif %}                     
+                        {% if item['number'] %}
+                            <div class="nav_drop_down">{{ item['number'] }}</div>
+                        {% endif %}
+                    </div>                     
                 {% endfor %}                                     
 
                 <!-- <div class="nav_list">
@@ -87,7 +89,7 @@
                 </div> -->
             </div>
 
-            </div> 
+            
         </div>
         <div class="right_side">
             <div class="heading">

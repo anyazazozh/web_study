@@ -5,6 +5,7 @@ body{
 
 .left_side{
     display:flex;
+    flex-direction: column;
     width:285px;
     height: 100vh;
     border-right: 1px solid #E6EDFF ;
@@ -478,18 +479,19 @@ body{
     gap: 4px;
     left: 51px;
     top: 60px;
+    height: 30px;
 }
 
 
 .top_menu{
-    left: 51px;
     margin-top: 72px;
+
+
 }
 
 .nav_list{
     display: flex;
     flex-direction: row;
-    gap: 69px;
     height: 24px;
 }
 
@@ -497,11 +499,11 @@ body{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 0px;
     gap: 12px;
     align-items: center;
-    width: 100%;
+    width: 193px;
     height: 24px;
+    margin-top: 28px;
 }
 
 .nav_icon{
@@ -553,7 +555,7 @@ body{
     gap: 28px;
     height: 128px;
     left: 56px;
-    margin-top: 260px;
+    margin-top: 310px;
 }
 
 .bottom_icon_text{
