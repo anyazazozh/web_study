@@ -13,20 +13,20 @@
         <div class="left_side"> 
             <div class="logo"><img src="/static/assets/Logo.png" alt="">
             <div class="top_menu">
-                <div class="nav_list icon_text">
-                        {% for item in left_menu %}
-                            <div class="nav_icon"><img src="{{ item['icon'] }}" alt=""></div>
-                            <div class="nav_text">{{ item['name'] }}</div>
-                        
-                            {% if item['expand'] %}
-                                <img class="nav_drop_down" src="/static/assets/shape (12).png" alt="">
-                            {% endif %}
 
-                            {% if item['number'] %}
-                                <div class="nav_drop_down">{{ item['number'] }}</div>
-                            {% endif %}                     
-                        {% endfor %}                                     
-                </div>
+                {% for item in left_menu %}
+                    <div class="nav_icon"><img src="{{ item['icon'] }}" alt=""></div>
+                    <div class="nav_text">{{ item['name'] }}</div>
+                
+                    {% if item['expand'] %}
+                        <img class="nav_drop_down" src="/static/assets/shape (12).png" alt="">
+                    {% endif %}
+
+                    {% if item['number'] %}
+                        <div class="nav_drop_down">{{ item['number'] }}</div>
+                    {% endif %}                     
+                {% endfor %}                                     
+
                 <!-- <div class="nav_list">
                     
                     <div class="icon_text"> -->
@@ -248,17 +248,32 @@
                 
                 <table class="order_table" width="100%">
                     <colgroup span="8"></colgroup>
+
                     <tr>
-                      <th>No</th>
-                      <th>ID <img src="/static/assets/shape (15).png" alt=""></th>
-                      <th>Date</th>
-                      <th>Customer Name <img src="/static/assets/shape (15).png" alt=""></th>
-                      <th>Location</th>
-                      <th>Amount <img src="/static/assets/shape (15).png" alt=""></th>
-                      <th>Status Order <img src="/static/assets/shape (15).png" alt=""></th>
-                      <th>Action</th>
+                        <th>No</th>
+                        <th>ID <img src="/static/assets/shape (15).png" alt=""></th>
+                        <th>Date</th>
+                        <th>Customer Name <img src="/static/assets/shape (15).png" alt=""></th>
+                        <th>Location</th>
+                        <th>Amount <img src="/static/assets/shape (15).png" alt=""></th>
+                        <th>Status Order <img src="/static/assets/shape (15).png" alt=""></th>
+                        <th>Action</th>
                     </tr>
-                    <tr>
+
+                    {% for item in table %}
+                        <tr>
+                            <td>{{ item['c1'] }}</td>
+                            <td>{{ item['c2'] }}</td>
+                            <td>{{ item['c3'] }}</td>
+                            <td>{{ item['c4'] }}</td>
+                            <td>{{ item['c5'] }}</td>
+                            <td>{{ item['c6'] }}/td>
+                            <td>{{ item['c7'] }}</td>
+                            <td>{{ item['c8'] }}<img src="/static/assets/shape (14).png" alt=""></td>
+                        </tr>
+                    {% endfor %}
+
+                    <!-- <tr>
                       <td>1</td>
                       <td>#12594</td>
                       <td>Dec 1, 2021</td>
@@ -267,7 +282,7 @@
                       <td>$847.69</td>
                       <td>New Order</td>
                       <td><img src="/static/assets/shape (14).png" alt=""></td>
-                    </tr>
+                    </tr> -->
                   </table>
             </div>
         </div>
